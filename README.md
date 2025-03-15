@@ -1,11 +1,11 @@
-# MarkovDecisionProcess
+# Markov Decision Process & Q-Learning with ε-Greedy Exploration and Boltzmann Temperature
 
 ## MDP and RL Implemention
 MDP is tested by TestMDP
 
 RL is tested by TestRL
 
-In RL, Q-learning with ε-greedy exploration/Boltzmann temperaturewas implemented.
+In RL, Q-learning with ε-greedy exploration/Boltzmann temperature was implemented.
 
 In these two test, there are 4 states in state space and 2 actions in action space.
 
