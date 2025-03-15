@@ -5,6 +5,8 @@ MDP is tested by TestMDP
 
 RL is tested by TestRL
 
+In RL, Q-learning with ε-greedy exploration/Boltzmann temperaturewas implemented.
+
 In these two test, there are 4 states in state space and 2 actions in action space.
 
 You can print policy and V(value funtion) to check the result.
