@@ -1,5 +1,6 @@
 # MarkovDecisionProcess
 
+## MDP and RL Implemention
 MDP is tested by TestMDP
 
 RL is tested by TestRL
@@ -10,7 +11,7 @@ You can print policy and V(value funtion) to check the result.
 
 The fianl policy is (0, 1, 1, 1) given the transition function and reward function in the code.
 
-\
+## Test on Maze
 
 Then you can test MDP and RL on the TestMDPmaze and TestRLmaze.
 
