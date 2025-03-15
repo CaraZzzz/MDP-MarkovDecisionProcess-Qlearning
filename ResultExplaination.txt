@@ -1,0 +1,68 @@
+Graph 1
+This appears to be a good result for the ε-greedy exploration comparison. Here's why:
+Learning Progress:
+All three curves show clear learning progress, starting from negative rewards and improving to positive rewards
+They converge to similar performance levels around reward 40-45
+The learning happens relatively quickly (within first 25-30 episodes)
+Exploration-Exploitation Trade-off:
+ε = 0.1 (blue line): Shows slightly more stable behavior after convergence due to less exploration
+ε = 0.3 (orange line): Shows good balance between exploration and exploitation
+ε = 0.5 (green line): Shows more variability due to higher exploration rate
+Key Observations:
+All three strategies eventually learn successful policies
+Higher ε values show more variance in performance (more "noisy" curves) due to more frequent random actions
+Lower ε values (0.1) show slightly more stable performance but might risk getting stuck in local optima
+The similar final performance across different ε values suggests the algorithm is robust to different exploration rates
+这对于ε-贪心勘探比较来说是一个很好的结果。原因如下:
+学习进度:
+三条曲线都显示了清晰的学习进度，从负奖励开始，再到正奖励
+在奖励40-45时，他们的表现水平趋于相似
+学习过程相对较快（在前25-30集）
+Exploration-Exploitation权衡:
+ε = 0.1（蓝线）：收敛后表现出稍稳定的行为，因为勘探较少
+ε = 0.3（橙色线）：勘探和开采之间的平衡良好
+ε = 0.5（绿线）：由于较高的勘探率，显示出更大的变异性
+主要观察:
+这三种策略最终都借鉴了成功的政策
+较高的ε值表明，由于更频繁的随机行为，性能变化更大（更“嘈杂”的曲线）
+较低的ε值（0.1）表现出稍稳定的性能，但可能会陷入局部最优状态
+不同ε值下的最终性能相似，表明该算法对不同的勘探速率具有鲁棒性
+
+
+Graph 2
+This is a good result for the Boltzmann temperature comparison.  Here's the analysis:
+Learning Progress:
+All three temperature settings (T=0, 10, 20) show successful learning
+They all converge to similar performance levels (around 35-45 reward)
+Initial learning phase is clear and consistent across all temperatures
+Temperature Effects:
+T=0 (blue line): Most stable but lowest average performance, as it's purely greedy with no exploration
+T=10 (orange line): Good balance of exploration and exploitation, showing higher average rewards
+T=20 (green line): Most exploratory, showing highest variance but also reaching some of the highest peaks
+Key Observations:
+Higher temperatures (T=10, T=20) generally achieve better average performance than T=0
+T=0 shows less variance but also lower average rewards, indicating it might be getting stuck in local optima
+Higher temperatures show more variance but explore more thoroughly, potentially finding better policies
+Comparison with ε-greedy:
+Boltzmann exploration appears to be more effective than ε-greedy in this case
+The curves are smoother than ε-greedy, suggesting more intelligent exploration
+Higher temperature settings achieve slightly better performance than the ε-greedy variants
+This is a good demonstration of how Boltzmann exploration can effectively balance exploration and exploitation, with the temperature parameter successfully controlling the trade-off between the two.  The results suggest that some amount of temperature-based exploration (T=10 or T=20) is beneficial compared to purely greedy behavior (T=0).
+这是玻尔兹曼温度比较的好结果。分析如下：
+学习进度:
+三种温度设置（T= 0,10,20）均显示学习成功
+他们都趋于相似的表现水平（大约35-45奖励）。
+初始学习阶段在所有温度下都是清晰和一致的
+温度的影响:
+T=0（蓝线）：最稳定，但平均性能最低，因为它纯粹是贪婪的，没有探索
+T=10（橙色线）：探索和开发平衡良好，平均奖励较高
+T=20（绿线）：最具探索性，显示出最高的方差，但也达到了一些最高峰
+主要观察:
+较高的温度（T=10， T=20）通常比T=0获得更好的平均性能
+T=0表示较小的方差，但也表示较低的平均奖励，表明它可能陷入局部最优
+更高的温度显示出更多的差异，但探索得更彻底，可能会找到更好的政策
+与ε-greedy的比较：
+在这种情况下，玻尔兹曼探索似乎比ε-greedy更有效
+曲线比ε-greedy更平滑，意味着更智能的勘探
+较高的温度设置比ε-贪心变体获得稍好的性能
+这很好地证明了玻尔兹曼勘探可以有效地平衡勘探和开采，温度参数成功地控制了两者之间的权衡。结果表明，与纯粹的贪婪行为（T=0）相比，一定数量的基于温度的勘探（T=10或T=20）是有益的。
